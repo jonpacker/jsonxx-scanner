@@ -5,6 +5,7 @@ var util = require('util'),
 function JxxScanner() {
   this.writable = true;
   this.buffer = null;
+  this.jxx = new jxx.scanner(this);
 };
 
 util.inherits(JxxScanner, events.EventEmitter);
